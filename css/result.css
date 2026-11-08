@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Results Page - Professional Score & Debriefing Dashboard
+   ========================================================================== */
+
+@import url("base.css");
+
+.results-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.result-card-container {
+    background: var(--surface-card);
+    border: 1.5px solid var(--border-warm);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-soft);
+    padding: 38px 36px;
+    margin-bottom: 32px;
+}
+
+.result-header-row {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1.5px solid var(--border-warm);
+}
+
+.score-radial-box {
+    width: 110px;
+    height: 110px;
+    border-radius: var(--radius-lg);
+    background: var(--gold-bg);
+    border: 2px solid var(--gold-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.18);
+    flex-shrink: 0;
+}
+
+.score-digits {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: var(--font-mono);
+    color: var(--gold-text);
+    line-height: 1;
+}
+
+.score-unit-tag {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--gold-accent);
+    margin-top: 6px;
+}
+
+.result-summary-wrap {
+    flex: 1;
+}
+
+.result-badge-kicker {
+    margin-bottom: 8px;
+}
+
+.result-verdict-title {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    margin: 0 0 8px;
+}
+
+.result-debrief-copy {
+    font-size: 1rem;
+    color: var(--ink-body);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.practice-records-list {
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.practice-records-list li {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--ink-body);
+    background: var(--surface-warm);
+    padding: 8px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-warm);
+}
+
+.result-actions-grid {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+/* Review Answers Collapsible List */
+.review-answers-section {
+    background: var(--surface-card);
+    border: 1.5px solid var(--border-warm);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-soft);
+    padding: 32px;
+    margin-top: 28px;
+}
+
+.review-section-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    margin: 0 0 18px;
+}
+
+.review-item-dossier {
+    background: var(--surface-warm);
+    border: 1.5px solid var(--border-warm);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 14px;
+}
+
+.review-item-dossier h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--ink-black);
+    margin: 0 0 8px;
+}
+
+.review-item-dossier p {
+    font-size: 0.92rem;
+    margin: 0 0 6px;
+    color: var(--ink-body);
+}
+
+.review-good {
+    color: var(--safe-green) !important;
+    font-weight: 800;
+}
+
+.review-learn {
+    color: var(--scam-red) !important;
+    font-weight: 800;
+}
+
+@media (max-width: 640px) {
+    .result-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .result-actions-grid .btn {
+        width: 100%;
+    }
+}
